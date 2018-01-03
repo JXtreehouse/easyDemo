@@ -1,32 +1,92 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset=utf-8>
-		<title>Thing 3D 1000-行代码demo</title>
-		<style> 
-			body { margin: 0; overflow: hidden; } 
-			canvas { width: 100%; height: 100% }
-		</style>
-		<link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" type="text/css" href="https://speech.uinnova.com/static/common/css/forkonme.css">
-		<script src="https://speech.uinnova.com/static/release/thing3d.min.js"></script>
-		<script src="https://speech.uinnova.com/static/release/dat.gui.js"></script>
-		<script src="js/silohouse1000.js"></script>
-	</head>
 
-	<style> 
-		body { margin: 0; overflow: hidden; } 
-		canvas { width: 100%; height: 100% }
+<head>
+	<meta charset=utf-8>
+	<title>Thing 3D 1000-行代码demo</title>
+	<style>
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%
+		}
 	</style>
-	
-	<body>
-		<div id="div3d">
-			<div class="fork-me-git">
-				<a class="fork-me-link-git" href="https://github.com/uinnova-t3d/easyDemo" target="_blank"><span class="fork-me-text-git">Fork Me On GitHub</span></a>
-			</div>
-			<div class="fork-me-gitee">
-				<a class="fork-me-link-gitee" href="https://gitee.com/uinnova-t3d/easyDemo" target="_blank"><span class="fork-me-text-gitee">Gitee 看代码</span></a>
-			</div>			
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="https://speech.uinnova.com/static/common/css/forkonme.css">
+	<script src="https://speech.uinnova.com/static/release/thing3d.min.js"></script>
+	<script src="https://speech.uinnova.com/static/release/dat.gui.js"></script>
+	<script src="js/silohouse1000.js"></script>
+</head>
+
+<style>
+	body {
+		margin: 0;
+		overflow: hidden;
+	}
+
+	canvas {
+		width: 100%;
+		height: 100%
+	}
+</style>
+
+<body>
+	<div id="div3d">
+		<div class="fork-me-git">
+			<a class="fork-me-link-git" href="https://github.com/uinnova-t3d/easyDemo" target="_blank">
+				<span class="fork-me-text-git">Fork Me On GitHub</span>
+			</a>
 		</div>
-	</body>
+		<div class="fork-me-gitee">
+			<a class="fork-me-link-gitee" href="https://gitee.com/uinnova-t3d/easyDemo" target="_blank">
+				<span class="fork-me-text-gitee">Gitee 看代码</span>
+			</a>
+		</div>
+		<div class="menu">
+			<div class="dv">
+				<ul class="ul ul-top">
+					<li class="li logo">
+						<div class="img"></div>
+					</li>
+					<li class="li" onclick="MenuItemClick(this,'fun')">
+						<div class="img"></div>
+						<p class="label">功能</p>
+					</li>
+					<li class="li">
+						<div class="img"></div>
+						<p class="label">行走(*)</p>
+					</li>
+					<li class="li">
+						<div class="img"></div>
+						<p class="label">帮助(*)</p>
+					</li>
+				</ul>
+				<ul class="ul ul-bottom">
+					<!-- 下边 -->
+					<li class="li" onclick="MenuItemClick(this,'cam')">
+						<div class="img img-2d"></div>
+						<p class="label">2D</p>
+					</li>
+					<li class="li" onclick="MenuItemClick(this,'rot')">
+						<div class="img"></div>
+						<p class="label">旋转</p>
+					</li>
+					<li class="li" onclick="MenuItemClick(this,'reset')">
+						<div class="img"></div>
+						<p class="label">复位</p>
+					</li>
+					<li class="li">
+						<div class="img"></div>
+						<p class="label">返回(*)</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
